@@ -13,13 +13,13 @@
 
 <body>
  <div class="login">
-	<h1>Predict Salary Analysis</h1>
+	<h1>Simple cost calculator</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="experience" placeholder="Experience" required="required" />
-        <input type="text" name="test_score" placeholder="Test Score" required="required" />
-		<input type="text" name="interview_score" placeholder="Interview Score" required="required" />
+    	<input type="text" name="Total Quantity" placeholder="Total Quantity" required="required" />
+        <input type="text" name="Price per bag" placeholder="Price per bag" required="required" />
+		<input type="text" name="Quantity per bag" placeholder="Quantity per bag" required="required" value=45>
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
@@ -30,7 +30,9 @@
    {{ prediction_text }}
 
  </div>
-
+    <br>
+    <br>
+    <br>
      <p> From Gopireddy Vishnu Vardhan Reddy </p>
 
 </body>
